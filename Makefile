@@ -70,3 +70,20 @@ publish:
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish 
+
+
+
+GITHUB_REPO = pierrebriaud.github.io
+GITHUB_BRANCH = main
+
+PELICAN = pelican
+INPUTDIR = content
+OUTPUTDIR = output
+PUBLISHCONF = publishconf.py
+PELICANOPTS =
+
+github: publish
+	cd $(OUTPUTDIR) && \
+	git add . && \
+	git commit -m "Mise à jour du site" || true && \
+	git push -f origin main

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         <meta charset="utf-8" />
-	<link rel="stylesheet" href="{{ SITEURL }}/custom.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
         <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
         {% if FEED_RSS %}
         <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
@@ -22,17 +21,6 @@
                 <link rel="stylesheet" type="text/css" media="all" href="{{ SITEURL }}/css/ie6.css"/><![endif]-->
 
 </head>
-
-
-<style>
-h1 {
-    display: none !important;
-}
-</style>
-
-
-
-
 
 <body id="index" class="home">
 {% include 'github.html' %}
@@ -55,15 +43,6 @@ h1 {
         {% block content %}
         {% endblock %}
 
-        <aside id="sidebar">
-                <div class="widget">
-                        <h2>Categories</h2>
-                        <ul>
-                        {% for cat, null in categories %}
-                           <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                        {% endfor %}
-                        </ul>
-                </div>
         {% if LINKS %}
                 <div class="widget blogroll">
                         <h2>Blogroll</h2>
@@ -93,7 +72,7 @@ h1 {
 
         <footer id="footer" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
+                Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>, which takes great advantages of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
 
                 <p>The theme is «notmyidea-cms», a modified version of «notmyidea», the default theme.</p>

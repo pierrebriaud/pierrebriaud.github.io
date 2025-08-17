@@ -2,7 +2,6 @@ Title: Home
 Date: 2025-06-15
 Slug: index
 
-<img src="/images/IMG_3189-400x524.jpeg" alt="Photo" width="200" />
 
 Since January 2024, I am a post-doctoral researcher in the Cryptography department of [Simula UiB](https://simula-uib.com/). I am interested in algebraic cryptanalysis, applied to various constructions.
 
