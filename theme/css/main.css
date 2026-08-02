@@ -147,8 +147,10 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 *****************/
 #banner {
     clear: both;
-	margin: 0 auto 0 auto;
-	padding: 2.5em 0 0 0;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 2.5em 0 0 0;
+    box-sizing: border-box;
 }
 
 	/* Banner */
@@ -219,17 +221,13 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	Featured
 *****************/
 #content {
-	background: #fff;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-    float: left;
-    margin: 1em 10px 2em 7%;
-	background: #fff;
-	overflow: hidden;
-	padding: 20px 20px;
-	min-width: 600px;
-	width: 60%;
+    width: 1000px;
+    margin: 1em auto 2em auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /*
@@ -446,7 +444,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 /* Barre noire alignée avec le titre */
 #banner nav {
     width: 1000px;
-    margin: 0 0 2em 0;
+    margin: 0 auto 2em auto;
 }
 
 /* Menu à gauche dans la barre */
