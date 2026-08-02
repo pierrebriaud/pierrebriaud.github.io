@@ -425,31 +425,34 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	#add-comment * {margin-bottom: .5em;}
 
 
+/* ===== Alignement global ===== */
 
-/* --- Aligner le titre à gauche --- */
-header h1, #banner h1 {
-    text-align: left;
-    margin-left: 0;
-    padding-left: 20px; /* Ajuste si besoin */
-}
-
-/* --- Aligner le menu à gauche --- */
-nav ul {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 20px; /* Ajuste pour alignement avec le titre */
-}
-
-/* --- Encadré blanc aligné avec barre noire --- */
-#content, .body, .content {
-    width: 1000px; /* ou ajuste à la largeur exacte de la barre noire */
+#banner,
+#content,
+.body,
+.content {
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
 }
 
-/* Optionnel : forcer largeur uniforme de la barre noire */
+/* Titre à gauche */
+#banner h1 {
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Barre noire alignée avec le titre */
 #banner nav {
     width: 1000px;
-    margin: 0 auto;
+    margin: 0 0 2em 0;
+}
+
+/* Menu à gauche dans la barre */
+#banner nav ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin: 0;
 }
