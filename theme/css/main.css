@@ -333,15 +333,23 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 #about .bio {float: right; width: 500px;}
 
-/*
-	Footer
-*****************/
 #footer {
-    padding-bottom: 2em; 
-    text-align: center; 
-    clear: both; 
-    width: 80%;
+    padding-bottom: 2em;
+    clear: both;
+    width: 1000px;
     margin: 20px auto;
+}
+
+#about {
+    background: #fff;
+    font-style: normal;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 /***** Sections *****/
